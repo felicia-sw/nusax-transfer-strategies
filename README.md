@@ -78,3 +78,9 @@ All runs used Python 3.13.5 on an Apple M3 laptop (16 GB) through the PyTorch MP
 `data/` holds copies of the official NusaX-Senti splits, which were checked to be
 byte-identical to commit `fa65c41` of [IndoNLP/nusax](https://github.com/IndoNLP/nusax). NusaX is
 distributed under its authors' licence; please cite Winata et al. (2023) when using it.
+
+## Licence
+
+The code is released under the [MIT License](LICENSE). The NusaX-Senti files in `data/` keep
+their original licence from [IndoNLP/nusax](https://github.com/IndoNLP/nusax); the MIT License
+does not cover them.
