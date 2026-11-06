@@ -1,0 +1,34 @@
+condition,lang,name,accuracy,macro_f1
+direct,indonesian,Indonesian,0.7475,0.7261849019237495
+direct,english,English,0.7725,0.741723382548298
+direct,acehnese,Acehnese,0.795,0.7822161049933442
+direct,balinese,Balinese,0.765,0.7395701195074822
+direct,banjarese,Banjarese,0.7825,0.7636429015572365
+direct,buginese,Buginese,0.7775,0.7510663365933437
+direct,javanese,Javanese,0.7575,0.728473584380442
+direct,madurese,Madurese,0.78,0.7525821480848581
+direct,minangkabau,Minangkabau,0.7675,0.740857858001049
+direct,ngaju,Ngaju,0.7475,0.7176152590779274
+direct,sundanese,Sundanese,0.735,0.7030449353191625
+direct,toba_batak,Toba Batak,0.7525,0.7293481769420426
+transfer,indonesian,Indonesian,0.7475,0.7261849019237495
+transfer,english,English,0.29,0.2223041131583845
+transfer,acehnese,Acehnese,0.665,0.6638086627554262
+transfer,balinese,Balinese,0.61,0.6040584811529186
+transfer,banjarese,Banjarese,0.7075,0.6837543389352855
+transfer,buginese,Buginese,0.4925,0.46193954245765906
+transfer,javanese,Javanese,0.7175,0.7083242389849252
+transfer,madurese,Madurese,0.7175,0.714257938110408
+transfer,minangkabau,Minangkabau,0.6975,0.6859069429675438
+transfer,ngaju,Ngaju,0.6375,0.6229939306185621
+transfer,sundanese,Sundanese,0.6475,0.6391590678824722
+transfer,toba_batak,Toba Batak,0.5025,0.47757934717806916
+translate,indonesian,Indonesian,0.74,0.7252503052503053
+translate,english,English,0.7175,0.7013742556115438
+translate,acehnese,Acehnese,0.7025,0.689716031821295
+translate,balinese,Balinese,0.7025,0.6914427736547165
+translate,banjarese,Banjarese,0.7075,0.6921660357856328
+translate,buginese,Buginese,0.625,0.6154355145659494
+translate,javanese,Javanese,0.7175,0.7048287000996734
+translate,minangkabau,Minangkabau,0.76,0.745859355641448
+translate,sundanese,Sundanese,0.7,0.6873090128552154

@@ -1,0 +1,302 @@
+{
+  "scores": [
+    {
+      "condition": "direct",
+      "lang": "indonesian",
+      "name": "Indonesian",
+      "accuracy": 0.7475,
+      "macro_f1": 0.7261849019237495
+    },
+    {
+      "condition": "direct",
+      "lang": "english",
+      "name": "English",
+      "accuracy": 0.7725,
+      "macro_f1": 0.741723382548298
+    },
+    {
+      "condition": "direct",
+      "lang": "acehnese",
+      "name": "Acehnese",
+      "accuracy": 0.795,
+      "macro_f1": 0.7822161049933442
+    },
+    {
+      "condition": "direct",
+      "lang": "balinese",
+      "name": "Balinese",
+      "accuracy": 0.765,
+      "macro_f1": 0.7395701195074822
+    },
+    {
+      "condition": "direct",
+      "lang": "banjarese",
+      "name": "Banjarese",
+      "accuracy": 0.7825,
+      "macro_f1": 0.7636429015572365
+    },
+    {
+      "condition": "direct",
+      "lang": "buginese",
+      "name": "Buginese",
+      "accuracy": 0.7775,
+      "macro_f1": 0.7510663365933437
+    },
+    {
+      "condition": "direct",
+      "lang": "javanese",
+      "name": "Javanese",
+      "accuracy": 0.7575,
+      "macro_f1": 0.728473584380442
+    },
+    {
+      "condition": "direct",
+      "lang": "madurese",
+      "name": "Madurese",
+      "accuracy": 0.78,
+      "macro_f1": 0.7525821480848581
+    },
+    {
+      "condition": "direct",
+      "lang": "minangkabau",
+      "name": "Minangkabau",
+      "accuracy": 0.7675,
+      "macro_f1": 0.740857858001049
+    },
+    {
+      "condition": "direct",
+      "lang": "ngaju",
+      "name": "Ngaju",
+      "accuracy": 0.7475,
+      "macro_f1": 0.7176152590779274
+    },
+    {
+      "condition": "direct",
+      "lang": "sundanese",
+      "name": "Sundanese",
+      "accuracy": 0.735,
+      "macro_f1": 0.7030449353191625
+    },
+    {
+      "condition": "direct",
+      "lang": "toba_batak",
+      "name": "Toba Batak",
+      "accuracy": 0.7525,
+      "macro_f1": 0.7293481769420426
+    },
+    {
+      "condition": "transfer",
+      "lang": "indonesian",
+      "name": "Indonesian",
+      "accuracy": 0.7475,
+      "macro_f1": 0.7261849019237495
+    },
+    {
+      "condition": "transfer",
+      "lang": "english",
+      "name": "English",
+      "accuracy": 0.29,
+      "macro_f1": 0.2223041131583845
+    },
+    {
+      "condition": "transfer",
+      "lang": "acehnese",
+      "name": "Acehnese",
+      "accuracy": 0.665,
+      "macro_f1": 0.6638086627554262
+    },
+    {
+      "condition": "transfer",
+      "lang": "balinese",
+      "name": "Balinese",
+      "accuracy": 0.61,
+      "macro_f1": 0.6040584811529186
+    },
+    {
+      "condition": "transfer",
+      "lang": "banjarese",
+      "name": "Banjarese",
+      "accuracy": 0.7075,
+      "macro_f1": 0.6837543389352855
+    },
+    {
+      "condition": "transfer",
+      "lang": "buginese",
+      "name": "Buginese",
+      "accuracy": 0.4925,
+      "macro_f1": 0.46193954245765906
+    },
+    {
+      "condition": "transfer",
+      "lang": "javanese",
+      "name": "Javanese",
+      "accuracy": 0.7175,
+      "macro_f1": 0.7083242389849252
+    },
+    {
+      "condition": "transfer",
+      "lang": "madurese",
+      "name": "Madurese",
+      "accuracy": 0.7175,
+      "macro_f1": 0.714257938110408
+    },
+    {
+      "condition": "transfer",
+      "lang": "minangkabau",
+      "name": "Minangkabau",
+      "accuracy": 0.6975,
+      "macro_f1": 0.6859069429675438
+    },
+    {
+      "condition": "transfer",
+      "lang": "ngaju",
+      "name": "Ngaju",
+      "accuracy": 0.6375,
+      "macro_f1": 0.6229939306185621
+    },
+    {
+      "condition": "transfer",
+      "lang": "sundanese",
+      "name": "Sundanese",
+      "accuracy": 0.6475,
+      "macro_f1": 0.6391590678824722
+    },
+    {
+      "condition": "transfer",
+      "lang": "toba_batak",
+      "name": "Toba Batak",
+      "accuracy": 0.5025,
+      "macro_f1": 0.47757934717806916
+    },
+    {
+      "condition": "translate",
+      "lang": "indonesian",
+      "name": "Indonesian",
+      "accuracy": 0.74,
+      "macro_f1": 0.7252503052503053
+    },
+    {
+      "condition": "translate",
+      "lang": "english",
+      "name": "English",
+      "accuracy": 0.7175,
+      "macro_f1": 0.7013742556115438
+    },
+    {
+      "condition": "translate",
+      "lang": "acehnese",
+      "name": "Acehnese",
+      "accuracy": 0.7025,
+      "macro_f1": 0.689716031821295
+    },
+    {
+      "condition": "translate",
+      "lang": "balinese",
+      "name": "Balinese",
+      "accuracy": 0.7025,
+      "macro_f1": 0.6914427736547165
+    },
+    {
+      "condition": "translate",
+      "lang": "banjarese",
+      "name": "Banjarese",
+      "accuracy": 0.7075,
+      "macro_f1": 0.6921660357856328
+    },
+    {
+      "condition": "translate",
+      "lang": "buginese",
+      "name": "Buginese",
+      "accuracy": 0.625,
+      "macro_f1": 0.6154355145659494
+    },
+    {
+      "condition": "translate",
+      "lang": "javanese",
+      "name": "Javanese",
+      "accuracy": 0.7175,
+      "macro_f1": 0.7048287000996734
+    },
+    {
+      "condition": "translate",
+      "lang": "minangkabau",
+      "name": "Minangkabau",
+      "accuracy": 0.76,
+      "macro_f1": 0.745859355641448
+    },
+    {
+      "condition": "translate",
+      "lang": "sundanese",
+      "name": "Sundanese",
+      "accuracy": 0.7,
+      "macro_f1": 0.6873090128552154
+    }
+  ],
+  "skipped": [
+    {
+      "condition": "translate",
+      "lang": "madurese",
+      "reason": "NLLB-200 has no language code for madurese"
+    },
+    {
+      "condition": "translate",
+      "lang": "ngaju",
+      "reason": "NLLB-200 has no language code for ngaju"
+    },
+    {
+      "condition": "translate",
+      "lang": "toba_batak",
+      "reason": "NLLB-200 has no language code for toba_batak"
+    }
+  ],
+  "stats": {
+    "test": "friedman",
+    "statistic": 11.37142857142856,
+    "p": 0.0033941080207100104,
+    "n_blocks": 9,
+    "k": 3,
+    "cd": 1.1045007922133872,
+    "avg_ranks": {
+      "direct": 1.1666666666666667,
+      "transfer": 2.7222222222222223,
+      "translate": 2.111111111111111
+    },
+    "pairs": [
+      {
+        "a": "direct",
+        "b": "transfer",
+        "rank_diff": 1.5556,
+        "significant": true
+      },
+      {
+        "a": "direct",
+        "b": "translate",
+        "rank_diff": 0.9444,
+        "significant": false
+      },
+      {
+        "a": "transfer",
+        "b": "translate",
+        "rank_diff": 0.6111,
+        "significant": false
+      }
+    ],
+    "languages_used": [
+      "indonesian",
+      "english",
+      "acehnese",
+      "balinese",
+      "banjarese",
+      "buginese",
+      "javanese",
+      "minangkabau",
+      "sundanese"
+    ],
+    "languages_dropped": [
+      "madurese",
+      "ngaju",
+      "toba_batak"
+    ]
+  },
+  "epochs": 3
+}

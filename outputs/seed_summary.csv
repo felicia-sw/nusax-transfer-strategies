@@ -1,0 +1,11 @@
+lang,direct_bert_mean,direct_bert_sd,translate_bert_mean,translate_bert_sd
+acehnese,0.7397,0.0163,0.7536,0.0102
+balinese,0.7638,0.0146,0.7444,0.0152
+banjarese,0.8098,0.0121,0.8089,0.0139
+buginese,0.7233,0.0235,0.691,0.0337
+javanese,0.805,0.0101,0.8061,0.0201
+madurese,0.7432,0.0091,,
+minangkabau,0.8173,0.0127,0.7993,0.0028
+ngaju,0.7442,0.0201,,
+sundanese,0.7648,0.0046,0.794,0.024
+toba_batak,0.7237,0.0066,,

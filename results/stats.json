@@ -1,0 +1,994 @@
+{
+ "transfer_seed_range": {
+  "acehnese": 0.088,
+  "balinese": 0.112,
+  "banjarese": 0.0506,
+  "buginese": 0.0753,
+  "english": 0.1198,
+  "javanese": 0.122,
+  "madurese": 0.0288,
+  "minangkabau": 0.0627,
+  "ngaju": 0.1154,
+  "sundanese": 0.1501,
+  "toba_batak": 0.0133
+ },
+ "overall": {
+  "direct": {
+   "mean": 0.7408417424456888,
+   "sd": 0.02292225751977467,
+   "ci": [
+    0.7244441472280748,
+    0.7572393376633028
+   ],
+   "min": 0.7030449353191625,
+   "max": 0.7822161049933442,
+   "n": 10,
+   "indonesian": 0.7261849019237495,
+   "english": 0.741723382548298,
+   "rank10": null,
+   "rank7": null,
+   "mean7": null
+  },
+  "direct_bert": {
+   "mean": 0.7634764122567106,
+   "sd": 0.035446633976134095,
+   "ci": [
+    0.7381194178478422,
+    0.788833406665579
+   ],
+   "min": 0.7233,
+   "max": 0.8172799231212456,
+   "n": 10,
+   "indonesian": 0.8915,
+   "english": 0.7799,
+   "rank10": 1.0,
+   "rank7": 1.4285714285714286,
+   "mean7": 0.7748057960715586
+  },
+  "transfer": {
+   "mean": 0.626178249104327,
+   "sd": 0.08977037272985045,
+   "ci": [
+    0.5619603930188811,
+    0.6903961051897728
+   ],
+   "min": 0.461939542457659,
+   "max": 0.714257938110408,
+   "n": 10,
+   "indonesian": 0.7261849019237495,
+   "english": 0.2223041131583845,
+   "rank10": null,
+   "rank7": null,
+   "mean7": null
+  },
+  "transfer_bert": {
+   "mean": 0.5813987139543113,
+   "sd": 0.13346924033544164,
+   "ci": [
+    0.48592057114333564,
+    0.676876856765287
+   ],
+   "min": 0.32443119700766565,
+   "max": 0.764671305954067,
+   "n": 10,
+   "indonesian": 0.8915,
+   "english": 0.3818,
+   "rank10": 2.0,
+   "rank7": 3.0,
+   "mean7": 0.6127194758877085
+  },
+  "translate": {
+   "mean": 0.6895367749177044,
+   "sd": 0.03854134957335605,
+   "ci": [
+    0.6538919716303467,
+    0.725181578205062
+   ],
+   "min": 0.6154355145659494,
+   "max": 0.745859355641448,
+   "n": 7,
+   "indonesian": 0.7252503052503053,
+   "english": 0.7013742556115438,
+   "rank10": null,
+   "rank7": null,
+   "mean7": null
+  },
+  "translate_bert": {
+   "mean": 0.771045035811011,
+   "sd": 0.0436111045054212,
+   "ci": [
+    0.7307114912297185,
+    0.8113785803923036
+   ],
+   "min": 0.6909722201966225,
+   "max": 0.8088748663008268,
+   "n": 7,
+   "indonesian": 0.8626094807771109,
+   "english": 0.8578420467185763,
+   "rank10": null,
+   "rank7": 1.5714285714285714,
+   "mean7": 0.771045035811011
+  },
+  "zeroshot": {
+   "mean": 0.4558739525559167,
+   "sd": 0.14205845198960096,
+   "ci": [
+    0.3542514578711426,
+    0.5574964472406907
+   ],
+   "min": 0.2272446488836987,
+   "max": 0.6892698356412993,
+   "n": 10,
+   "indonesian": 0.8624190959226793,
+   "english": 0.8484771928862349,
+   "rank10": 3.0,
+   "rank7": 4.0,
+   "mean7": 0.4963195583577122
+  }
+ },
+ "friedman10": {
+  "chi2": 20.0,
+  "p": 4.539992976248486e-05,
+  "cd": 1.0478214542564015,
+  "W": 1.0,
+  "pairs": [
+   {
+    "a": "direct_bert",
+    "b": "transfer_bert",
+    "rank_diff": 1.0,
+    "significant": false
+   },
+   {
+    "a": "direct_bert",
+    "b": "zeroshot",
+    "rank_diff": 2.0,
+    "significant": true
+   },
+   {
+    "a": "transfer_bert",
+    "b": "zeroshot",
+    "rank_diff": 1.0,
+    "significant": false
+   }
+  ]
+ },
+ "friedman7": {
+  "chi2": 18.94285714285715,
+  "p": 0.00028093837518952967,
+  "cd": 1.772778421950508,
+  "W": 0.902040816326531,
+  "pairs": [
+   {
+    "a": "direct_bert",
+    "b": "transfer_bert",
+    "rank_diff": 1.5714,
+    "significant": false
+   },
+   {
+    "a": "direct_bert",
+    "b": "translate_bert",
+    "rank_diff": 0.1429,
+    "significant": false
+   },
+   {
+    "a": "direct_bert",
+    "b": "zeroshot",
+    "rank_diff": 2.5714,
+    "significant": true
+   },
+   {
+    "a": "transfer_bert",
+    "b": "translate_bert",
+    "rank_diff": 1.4286,
+    "significant": false
+   },
+   {
+    "a": "transfer_bert",
+    "b": "zeroshot",
+    "rank_diff": 1.0,
+    "significant": false
+   },
+   {
+    "a": "translate_bert",
+    "b": "zeroshot",
+    "rank_diff": 2.4286,
+    "significant": true
+   }
+  ]
+ },
+ "pairs": {
+  "translate_bert|direct_bert": {
+   "gap": -0.00376076026054774,
+   "ci": [
+    -0.02337201692474711,
+    0.015850496403651628
+   ],
+   "wins": 3,
+   "n": 7,
+   "W": 11.0,
+   "p": 0.6875,
+   "r_rb": -0.21428571428571427
+  },
+  "direct_bert|transfer_bert": {
+   "gap": 0.18207769830239945,
+   "ci": [
+    0.10859218142612827,
+    0.25556321517867064
+   ],
+   "wins": 10,
+   "n": 10,
+   "W": 0.0,
+   "p": 0.001953125,
+   "r_rb": 1.0
+  },
+  "direct_bert|zeroshot": {
+   "gap": 0.30760245970079403,
+   "ci": [
+    0.22741555672156438,
+    0.3877893626800237
+   ],
+   "wins": 10,
+   "n": 10,
+   "W": 0.0,
+   "p": 0.001953125,
+   "r_rb": 1.0
+  },
+  "transfer_bert|zeroshot": {
+   "gap": 0.12552476139839458,
+   "ci": [
+    0.08096857592080184,
+    0.17008094687598732
+   ],
+   "wins": 10,
+   "n": 10,
+   "W": 0.0,
+   "p": 0.001953125,
+   "r_rb": 1.0
+  },
+  "direct_bert|direct": {
+   "gap": 0.022634669811021878,
+   "ci": [
+    -0.007993558981882379,
+    0.053262898603926134
+   ],
+   "wins": 6,
+   "n": 10,
+   "W": 14.0,
+   "p": 0.193359375,
+   "r_rb": 0.4909090909090909
+  },
+  "transfer_bert|transfer": {
+   "gap": -0.044779535150015745,
+   "ci": [
+    -0.0968722532167475,
+    0.007313182916716003
+   ],
+   "wins": 4,
+   "n": 10,
+   "W": 13.0,
+   "p": 0.16015625,
+   "r_rb": -0.5272727272727272
+  },
+  "translate_bert|translate": {
+   "gap": 0.08150826089330662,
+   "ci": [
+    0.056990983521054334,
+    0.10602553826555891
+   ],
+   "wins": 7,
+   "n": 7,
+   "W": 0.0,
+   "p": 0.015625,
+   "r_rb": 1.0
+  }
+ },
+ "seed": {
+  "single_gap": 0.02595960125453029,
+  "single_wins": 6,
+  "single_p": 0.046875,
+  "single_W": 2.0,
+  "range": {
+   "acehnese": 0.0325,
+   "balinese": 0.0289,
+   "banjarese": 0.0226,
+   "buginese": 0.0462,
+   "javanese": 0.0199,
+   "madurese": 0.017,
+   "minangkabau": 0.0223,
+   "ngaju": 0.0403,
+   "sundanese": 0.009,
+   "toba_batak": 0.013
+  },
+  "sd_max": 0.0337
+ },
+ "spearman": {
+  "direct_bert|lexical_overlap": {
+   "rho": 0.8545454545454544,
+   "p": 0.0016368033159867143
+  },
+  "direct_bert|trigram_similarity": {
+   "rho": 0.7818181818181817,
+   "p": 0.007547007781067878
+  },
+  "transfer_bert|lexical_overlap": {
+   "rho": 0.7333333333333332,
+   "p": 0.01580059625057158
+  },
+  "transfer_bert|trigram_similarity": {
+   "rho": 0.6848484848484848,
+   "p": 0.02888279750673276
+  },
+  "zeroshot|lexical_overlap": {
+   "rho": 0.5878787878787878,
+   "p": 0.07387770688865801
+  },
+  "zeroshot|trigram_similarity": {
+   "rho": 0.5030303030303029,
+   "p": 0.13833369839449197
+  }
+ },
+ "similarity": {
+  "acehnese": {
+   "lexical_overlap": 0.367,
+   "trigram_similarity": 0.609
+  },
+  "balinese": {
+   "lexical_overlap": 0.466,
+   "trigram_similarity": 0.708
+  },
+  "banjarese": {
+   "lexical_overlap": 0.503,
+   "trigram_similarity": 0.816
+  },
+  "buginese": {
+   "lexical_overlap": 0.232,
+   "trigram_similarity": 0.383
+  },
+  "javanese": {
+   "lexical_overlap": 0.452,
+   "trigram_similarity": 0.703
+  },
+  "madurese": {
+   "lexical_overlap": 0.348,
+   "trigram_similarity": 0.57
+  },
+  "minangkabau": {
+   "lexical_overlap": 0.502,
+   "trigram_similarity": 0.745
+  },
+  "ngaju": {
+   "lexical_overlap": 0.497,
+   "trigram_similarity": 0.774
+  },
+  "sundanese": {
+   "lexical_overlap": 0.456,
+   "trigram_similarity": 0.662
+  },
+  "toba_batak": {
+   "lexical_overlap": 0.317,
+   "trigram_similarity": 0.605
+  }
+ },
+ "per_class": {
+  "direct": {
+   "langs": 10,
+   "accuracy": 0.766,
+   "macro_f1_pooled": 0.7411890208563369,
+   "negative": {
+    "p": 0.6857749469214437,
+    "r": 0.8444444444444444,
+    "f1": 0.7568834212067955,
+    "n": 1530
+   },
+   "neutral": {
+    "p": 0.8151986183074266,
+    "r": 0.49166666666666664,
+    "f1": 0.6133853151397011,
+    "n": 960
+   },
+   "positive": {
+    "p": 0.8458035133376708,
+    "r": 0.8609271523178808,
+    "f1": 0.853298326222514,
+    "n": 1510
+   },
+   "pred_share": {
+    "negative": 0.471,
+    "neutral": 0.14475,
+    "positive": 0.38425
+   },
+   "per_lang_neutral_f1": {
+    "acehnese": 0.7073170731707317,
+    "balinese": 0.6143790849673203,
+    "banjarese": 0.6583850931677019,
+    "buginese": 0.618421052631579,
+    "javanese": 0.5827814569536424,
+    "madurese": 0.6174496644295302,
+    "minangkabau": 0.6052631578947368,
+    "ngaju": 0.5657894736842105,
+    "sundanese": 0.543046357615894,
+    "toba_batak": 0.6103896103896104
+   }
+  },
+  "direct_bert": {
+   "langs": 10,
+   "accuracy": 0.76175,
+   "macro_f1_pooled": 0.7517748536404216,
+   "negative": {
+    "p": 0.7079593058049073,
+    "r": 0.773202614379085,
+    "f1": 0.739144017494533,
+    "n": 1530
+   },
+   "neutral": {
+    "p": 0.7857142857142857,
+    "r": 0.61875,
+    "f1": 0.6923076923076923,
+    "n": 960
+   },
+   "positive": {
+    "p": 0.8073744437380801,
+    "r": 0.8410596026490066,
+    "f1": 0.8238728511190399,
+    "n": 1510
+   },
+   "pred_share": {
+    "negative": 0.41775,
+    "neutral": 0.189,
+    "positive": 0.39325
+   },
+   "per_lang_neutral_f1": {
+    "acehnese": 0.631578947368421,
+    "balinese": 0.7078651685393258,
+    "banjarese": 0.7251461988304093,
+    "buginese": 0.6375,
+    "javanese": 0.7428571428571429,
+    "madurese": 0.651685393258427,
+    "minangkabau": 0.7415730337078652,
+    "ngaju": 0.651685393258427,
+    "sundanese": 0.7241379310344828,
+    "toba_batak": 0.6976744186046512
+   }
+  },
+  "transfer_bert": {
+   "langs": 10,
+   "accuracy": 0.60675,
+   "macro_f1_pooled": 0.590001912773459,
+   "negative": {
+    "p": 0.5439560439560439,
+    "r": 0.8411764705882353,
+    "f1": 0.6606776180698152,
+    "n": 1530
+   },
+   "neutral": {
+    "p": 0.538860103626943,
+    "r": 0.5416666666666666,
+    "f1": 0.5402597402597402,
+    "n": 960
+   },
+   "positive": {
+    "p": 0.9267563527653214,
+    "r": 0.4105960264900662,
+    "f1": 0.5690683799908215,
+    "n": 1510
+   },
+   "pred_share": {
+    "negative": 0.5915,
+    "neutral": 0.24125,
+    "positive": 0.16725
+   },
+   "per_lang_neutral_f1": {
+    "acehnese": 0.5487804878048781,
+    "balinese": 0.5371428571428571,
+    "banjarese": 0.7204968944099379,
+    "buginese": 0.44642857142857145,
+    "javanese": 0.49612403100775193,
+    "madurese": 0.5066666666666667,
+    "minangkabau": 0.6839378238341969,
+    "ngaju": 0.4935064935064935,
+    "sundanese": 0.5217391304347826,
+    "toba_batak": 0.5286343612334802
+   }
+  },
+  "translate_bert": {
+   "langs": 7,
+   "accuracy": 0.7942857142857143,
+   "macro_f1_pooled": 0.7890262855136605,
+   "negative": {
+    "p": 0.8082191780821918,
+    "r": 0.8263305322128851,
+    "f1": 0.817174515235457,
+    "n": 1071
+   },
+   "neutral": {
+    "p": 0.6736196319018405,
+    "r": 0.8169642857142857,
+    "f1": 0.738399462004035,
+    "n": 672
+   },
+   "positive": {
+    "p": 0.8876404494382022,
+    "r": 0.7473982970671712,
+    "f1": 0.8115048793014895,
+    "n": 1057
+   },
+   "pred_share": {
+    "negative": 0.39107142857142857,
+    "neutral": 0.2910714285714286,
+    "positive": 0.31785714285714284
+   },
+   "per_lang_neutral_f1": {
+    "acehnese": 0.6964285714285714,
+    "balinese": 0.728110599078341,
+    "banjarese": 0.7751196172248804,
+    "buginese": 0.7053140096618358,
+    "javanese": 0.7596153846153846,
+    "minangkabau": 0.7414634146341463,
+    "sundanese": 0.7649769585253456
+   }
+  },
+  "zeroshot": {
+   "langs": 10,
+   "accuracy": 0.46825,
+   "macro_f1_pooled": 0.46956580584457824,
+   "negative": {
+    "p": 0.7020958083832335,
+    "r": 0.3065359477124183,
+    "f1": 0.4267515923566879,
+    "n": 1530
+   },
+   "neutral": {
+    "p": 0.3144746509919177,
+    "r": 0.8916666666666667,
+    "f1": 0.46496469310157523,
+    "n": 960
+   },
+   "positive": {
+    "p": 0.898360655737705,
+    "r": 0.3629139072847682,
+    "f1": 0.5169811320754717,
+    "n": 1510
+   },
+   "pred_share": {
+    "negative": 0.167,
+    "neutral": 0.6805,
+    "positive": 0.1525
+   },
+   "per_lang_neutral_f1": {
+    "acehnese": 0.4564102564102564,
+    "balinese": 0.4574468085106383,
+    "banjarese": 0.4778761061946903,
+    "buginese": 0.40979955456570155,
+    "javanese": 0.5925925925925926,
+    "madurese": 0.4666666666666667,
+    "minangkabau": 0.506578947368421,
+    "ngaju": 0.4433497536945813,
+    "sundanese": 0.5031446540880503,
+    "toba_batak": 0.4090909090909091
+   }
+  }
+ },
+ "confusion": {
+  "direct": [
+   [
+    1292,
+    83,
+    155
+   ],
+   [
+    406,
+    472,
+    82
+   ],
+   [
+    186,
+    24,
+    1300
+   ]
+  ],
+  "direct_bert": [
+   [
+    1183,
+    118,
+    229
+   ],
+   [
+    292,
+    594,
+    74
+   ],
+   [
+    196,
+    44,
+    1270
+   ]
+  ],
+  "transfer_bert": [
+   [
+    1287,
+    209,
+    34
+   ],
+   [
+    425,
+    520,
+    15
+   ],
+   [
+    654,
+    236,
+    620
+   ]
+  ],
+  "translate_bert": [
+   [
+    885,
+    129,
+    57
+   ],
+   [
+    80,
+    549,
+    43
+   ],
+   [
+    130,
+    137,
+    790
+   ]
+  ],
+  "zeroshot": [
+   [
+    469,
+    1025,
+    36
+   ],
+   [
+    78,
+    856,
+    26
+   ],
+   [
+    121,
+    841,
+    548
+   ]
+  ]
+ },
+ "seed42": {
+  "direct": {
+   "acehnese": 0.7822161049933442,
+   "balinese": 0.7395701195074822,
+   "banjarese": 0.7636429015572365,
+   "buginese": 0.7510663365933437,
+   "javanese": 0.728473584380442,
+   "madurese": 0.7525821480848581,
+   "minangkabau": 0.740857858001049,
+   "ngaju": 0.7176152590779274,
+   "sundanese": 0.7030449353191625,
+   "toba_batak": 0.7293481769420426
+  },
+  "direct_bert": {
+   "acehnese": 0.7240679526234896,
+   "balinese": 0.7618432830362245,
+   "banjarese": 0.7960074843370037,
+   "buginese": 0.6978280580283548,
+   "javanese": 0.793958013312852,
+   "madurese": 0.7328741597837141,
+   "minangkabau": 0.8025857226816219,
+   "ngaju": 0.7235600222274776,
+   "sundanese": 0.763595747479644,
+   "toba_batak": 0.7177884918384067
+  },
+  "transfer_bert": {
+   "acehnese": 0.5468591425128747,
+   "balinese": 0.6260598533861481,
+   "banjarese": 0.7903625930143172,
+   "buginese": 0.31015570451054325,
+   "javanese": 0.6723677929107547,
+   "madurese": 0.5768222171508426,
+   "minangkabau": 0.708365160977458,
+   "ngaju": 0.5442331062062004,
+   "sundanese": 0.5794417606011809,
+   "toba_batak": 0.4236651920855578
+  },
+  "translate_bert": {
+   "acehnese": 0.7552787108759781,
+   "balinese": 0.7620131491991985,
+   "banjarese": 0.8248107773338376,
+   "buginese": 0.7298224646050734,
+   "javanese": 0.8293537802066092,
+   "minangkabau": 0.800493698297819,
+   "sundanese": 0.8198446282631963
+  },
+  "zeroshot": {
+   "acehnese": 0.410874959028926,
+   "balinese": 0.46478173474418777,
+   "banjarese": 0.5301142300089711,
+   "buginese": 0.2272446488836987,
+   "javanese": 0.6892698356412993,
+   "madurese": 0.43256114072945756,
+   "minangkabau": 0.5936245394049388,
+   "ngaju": 0.36780099043085196,
+   "sundanese": 0.5583269607919639,
+   "toba_batak": 0.2841404858948719
+  }
+ },
+ "zeroshot": {
+  "indonesian": {
+   "neutral_share": 0.2575,
+   "macro_f1": 0.8624,
+   "accuracy": 0.875
+  },
+  "english": {
+   "neutral_share": 0.225,
+   "macro_f1": 0.8485,
+   "accuracy": 0.865
+  },
+  "acehnese": {
+   "neutral_share": 0.735,
+   "macro_f1": 0.4109,
+   "accuracy": 0.4225
+  },
+  "balinese": {
+   "neutral_share": 0.7,
+   "macro_f1": 0.4648,
+   "accuracy": 0.465
+  },
+  "banjarese": {
+   "neutral_share": 0.6075,
+   "macro_f1": 0.5301,
+   "accuracy": 0.5225
+  },
+  "buginese": {
+   "neutral_share": 0.8825,
+   "macro_f1": 0.2272,
+   "accuracy": 0.29
+  },
+  "javanese": {
+   "neutral_share": 0.435,
+   "macro_f1": 0.6893,
+   "accuracy": 0.69
+  },
+  "madurese": {
+   "neutral_share": 0.735,
+   "macro_f1": 0.4326,
+   "accuracy": 0.44
+  },
+  "minangkabau": {
+   "neutral_share": 0.52,
+   "macro_f1": 0.5936,
+   "accuracy": 0.5875
+  },
+  "ngaju": {
+   "neutral_share": 0.775,
+   "macro_f1": 0.3678,
+   "accuracy": 0.3875
+  },
+  "sundanese": {
+   "neutral_share": 0.555,
+   "macro_f1": 0.5583,
+   "accuracy": 0.5525
+  },
+  "toba_batak": {
+   "neutral_share": 0.86,
+   "macro_f1": 0.2841,
+   "accuracy": 0.325
+  }
+ },
+ "zeroshot_corr": {
+  "share_vs_f1": {
+   "rho": -0.9969650916353059,
+   "p": 3.698093220209985e-10
+  },
+  "overlap_vs_share": {
+   "rho": -0.5957474328064633,
+   "p": 0.0691558441520855
+  }
+ },
+ "encoders": {
+  "indobert": {
+   "direct": NaN,
+   "transfer": 0.5814,
+   "translate": 0.771
+  },
+  "xlmr": {
+   "direct": 0.5179,
+   "transfer": 0.5431,
+   "translate": 0.6638
+  }
+ },
+ "llm_rules": {
+  "indonesian": {
+   "space": {
+    "macro_f1": 0.8624190959226793,
+    "neutral_share": 0.2575
+   },
+   "cap": {
+    "macro_f1": 0.8599825177415292,
+    "neutral_share": 0.26
+   },
+   "calibrated": {
+    "macro_f1": 0.6238822688520324,
+    "neutral_share": 0.0225
+   }
+  },
+  "english": {
+   "space": {
+    "macro_f1": 0.8484771928862349,
+    "neutral_share": 0.225
+   },
+   "cap": {
+    "macro_f1": 0.8448557938812811,
+    "neutral_share": 0.215
+   },
+   "calibrated": {
+    "macro_f1": 0.5995847256207191,
+    "neutral_share": 0.0175
+   }
+  },
+  "acehnese": {
+   "space": {
+    "macro_f1": 0.410874959028926,
+    "neutral_share": 0.735
+   },
+   "cap": {
+    "macro_f1": 0.43763869308861997,
+    "neutral_share": 0.6975
+   },
+   "calibrated": {
+    "macro_f1": 0.44411394354865247,
+    "neutral_share": 0.04
+   }
+  },
+  "balinese": {
+   "space": {
+    "macro_f1": 0.46478173474418777,
+    "neutral_share": 0.7
+   },
+   "cap": {
+    "macro_f1": 0.4884736695013376,
+    "neutral_share": 0.6675
+   },
+   "calibrated": {
+    "macro_f1": 0.4154756521338516,
+    "neutral_share": 0.025
+   }
+  },
+  "banjarese": {
+   "space": {
+    "macro_f1": 0.5301142300089711,
+    "neutral_share": 0.6075
+   },
+   "cap": {
+    "macro_f1": 0.5443768996960486,
+    "neutral_share": 0.5825
+   },
+   "calibrated": {
+    "macro_f1": 0.5096185733330677,
+    "neutral_share": 0.0325
+   }
+  },
+  "buginese": {
+   "space": {
+    "macro_f1": 0.2272446488836987,
+    "neutral_share": 0.8825
+   },
+   "cap": {
+    "macro_f1": 0.24478061027090212,
+    "neutral_share": 0.8375
+   },
+   "calibrated": {
+    "macro_f1": 0.38226643025440826,
+    "neutral_share": 0.0425
+   }
+  },
+  "javanese": {
+   "space": {
+    "macro_f1": 0.6892698356412993,
+    "neutral_share": 0.435
+   },
+   "cap": {
+    "macro_f1": 0.7164931260003155,
+    "neutral_share": 0.4
+   },
+   "calibrated": {
+    "macro_f1": 0.5018165826595853,
+    "neutral_share": 0.0175
+   }
+  },
+  "madurese": {
+   "space": {
+    "macro_f1": 0.43256114072945756,
+    "neutral_share": 0.735
+   },
+   "cap": {
+    "macro_f1": 0.4710889786589985,
+    "neutral_share": 0.6825
+   },
+   "calibrated": {
+    "macro_f1": 0.44951818616938777,
+    "neutral_share": 0.05
+   }
+  },
+  "minangkabau": {
+   "space": {
+    "macro_f1": 0.5936245394049388,
+    "neutral_share": 0.52
+   },
+   "cap": {
+    "macro_f1": 0.6082043801116873,
+    "neutral_share": 0.4975
+   },
+   "calibrated": {
+    "macro_f1": 0.5510759667520818,
+    "neutral_share": 0.03
+   }
+  },
+  "ngaju": {
+   "space": {
+    "macro_f1": 0.36780099043085196,
+    "neutral_share": 0.775
+   },
+   "cap": {
+    "macro_f1": 0.4105374368764783,
+    "neutral_share": 0.7275
+   },
+   "calibrated": {
+    "macro_f1": 0.4760831913312429,
+    "neutral_share": 0.0375
+   }
+  },
+  "sundanese": {
+   "space": {
+    "macro_f1": 0.5583269607919639,
+    "neutral_share": 0.555
+   },
+   "cap": {
+    "macro_f1": 0.5776344330262714,
+    "neutral_share": 0.5175
+   },
+   "calibrated": {
+    "macro_f1": 0.48617582523235564,
+    "neutral_share": 0.025
+   }
+  },
+  "toba_batak": {
+   "space": {
+    "macro_f1": 0.2841404858948719,
+    "neutral_share": 0.86
+   },
+   "cap": {
+    "macro_f1": 0.31140133144944687,
+    "neutral_share": 0.835
+   },
+   "calibrated": {
+    "macro_f1": 0.37117348201392625,
+    "neutral_share": 0.0275
+   }
+  }
+ },
+ "llm_rules_mean10": {
+  "space": {
+   "macro_f1": 0.4558739525559167,
+   "neutral_share": 0.6805
+  },
+  "cap": {
+   "macro_f1": 0.4810629558680105,
+   "neutral_share": 0.6445000000000001
+  },
+  "calibrated": {
+   "macro_f1": 0.45873178334285597,
+   "neutral_share": 0.03275000000000001
+  }
+ },
+ "chrf": {
+  "raw_mean": 42.20031070066595,
+  "mt_mean": 48.10399590485444,
+  "exact_max": 0.0175,
+  "gain_vs_gap": {
+   "rho": 0.21428571428571433,
+   "p": 0.6445115810207203
+  }
+ }
+}
