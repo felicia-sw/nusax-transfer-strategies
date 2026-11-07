@@ -32,6 +32,8 @@ ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 OUT = Path(ARGS[0]).resolve() if ARGS else ROOT / "results"
 THREE_SEED_TRANSFER = "--three-seed-transfer" in sys.argv
 SRW = ROOT / "outputs" / "srw"
+if THREE_SEED_TRANSFER:                      # journal version: the MJI template asks for
+    plt.rcParams["font.family"] = "Times New Roman"   # Times New Roman figure labels
 PRED = ROOT / "outputs" / "predictions"
 LABELS = ["negative", "neutral", "positive"]
 MAIN = ["direct_bert", "transfer_bert", "translate_bert", "zeroshot"]
