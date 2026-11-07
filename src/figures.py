@@ -132,6 +132,18 @@ def fig_cd(w: pd.DataFrame, conds: list[str], title: str):
         ax.vlines(t, top - 0.11, top, color=INK, lw=1.1)
         ax.text(t, top + 0.15, str(t), ha="center", va="bottom", fontsize=8.5)
 
+    # Thick bars join strategies whose ranks differ by less than the CD, i.e.
+    # the Nemenyi test cannot separate them. Only maximal groups are drawn.
+    rs = sorted(ranks.values())
+    groups = []
+    for i in range(k):
+        j = max(j for j in range(i, k) if rs[j] - rs[i] < cd)
+        if j > i and not any(a <= i and j <= b for a, b in groups):
+            groups.append((i, j))
+    for g, (i, j) in enumerate(groups):
+        y = top - 0.20 - g * 0.13
+        ax.plot([rs[i] - 0.03, rs[j] + 0.03], [y, y], color=INK, lw=3.2, solid_capstyle="butt", zorder=4)
+
     elbow = 1 - 0.30          # where connectors stop
     text_x = elbow - 0.06     # labels start here and run right into the margin
     last_y = top - 0.58 - (k - 1) * 0.50
